@@ -3,6 +3,7 @@ import { bgWrap, bgText, bgBlur, link1, link2, Description, noDisplay } from '..
 import {useState} from 'react'
 
 const teste = false
+const description = "Tomorrow We Dance first event will take place on an abandoned garage, with outstanding scenography and incredible line up with both national and international guest\'s from d-edge, dance different and afterlife. 19.03.2022. São Paulo, Brasil"
 const Background = () => {
   const [blur, setBlur] = useState(false)
   setTimeout( ()=>{
@@ -21,7 +22,7 @@ const Background = () => {
  
     </div>
          <p className={blur?Description:noDisplay}>
-      Tomorrow We Dance first event will take place on an abandoned garage, with outstanding scenography and incredible line up with both national and international guest's from d-edge, dance different and afterlife. 19.03.2022. São Paulo, Brasil
+           {description}
       </p>
     <a className={blur?link1:noDisplay} href="https://www.eventbrite.com/e/tomorrowedance-19032022-tickets-293538851607">Tickets</a>
     <a className={blur?link2:noDisplay} href="https://www.instagram.com/tomorrowedance/">Instagram</a>
